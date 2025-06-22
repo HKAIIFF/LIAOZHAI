@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>《聊齋》AI原生電影 - NFT平台</title>
+    <title>《聊齋誌異》AI原生電影 - NFT文化收藏平台</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Orbitron:wght@700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #3498db;
-            --secondary: #8e44ad;
-            --accent: #00ff9d;
+            --primary: #1e7e34;
+            --secondary: #6f42c1;
+            --accent: #fd7e14;
         }
         
         body {
@@ -20,8 +20,8 @@
             color: #ffffff;
             overflow-x: hidden;
             background-image: 
-                radial-gradient(circle at 10% 20%, rgba(52, 152, 219, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(142, 68, 173, 0.1) 0%, transparent 20%);
+                radial-gradient(circle at 10% 20%, rgba(30, 126, 52, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(111, 66, 193, 0.1) 0%, transparent 20%);
         }
         
         .logo-font {
@@ -35,13 +35,13 @@
             color: transparent;
             position: relative;
             display: inline-block;
-            text-shadow: 0 0 15px rgba(0, 255, 157, 0.3);
+            text-shadow: 0 0 15px rgba(253, 126, 20, 0.3);
             animation: logoGlow 3s ease-in-out infinite alternate;
         }
         
         @keyframes logoGlow {
-            0% { text-shadow: 0 0 10px rgba(0, 255, 157, 0.3); }
-            100% { text-shadow: 0 0 25px rgba(0, 255, 157, 0.6), 0 0 35px rgba(52, 152, 219, 0.4); }
+            0% { text-shadow: 0 0 10px rgba(253, 126, 20, 0.3); }
+            100% { text-shadow: 0 0 25px rgba(253, 126, 20, 0.6), 0 0 35px rgba(30, 126, 52, 0.4); }
         }
         
         .logo-sub {
@@ -68,8 +68,8 @@
         }
         
         .accent-bg {
-            background: rgba(0, 255, 157, 0.1);
-            border: 1px solid rgba(0, 255, 157, 0.2);
+            background: rgba(253, 126, 20, 0.1);
+            border: 1px solid rgba(253, 126, 20, 0.2);
         }
         
         .card {
@@ -83,14 +83,14 @@
         
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0, 255, 157, 0.2);
-            border-color: rgba(0, 255, 157, 0.3);
+            box-shadow: 0 15px 30px rgba(253, 126, 20, 0.2);
+            border-color: rgba(253, 126, 20, 0.3);
         }
         
         .navbar {
             background-color: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 255, 157, 0.1);
+            border-bottom: 1px solid rgba(253, 126, 20, 0.1);
         }
         
         .btn-primary {
@@ -102,7 +102,7 @@
         
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.4);
+            box-shadow: 0 10px 20px rgba(30, 126, 52, 0.4);
         }
         
         .btn-secondary {
@@ -114,7 +114,7 @@
         }
         
         .btn-secondary:hover {
-            background-color: rgba(0, 255, 157, 0.1);
+            background-color: rgba(253, 126, 20, 0.1);
             transform: translateY(-3px);
         }
         
@@ -149,7 +149,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
             opacity: 0.7;
@@ -234,8 +234,8 @@
         
         .ai-element {
             position: absolute;
-            background-color: rgba(52, 152, 219, 0.1);
-            border: 1px solid rgba(52, 152, 219, 0.3);
+            background-color: rgba(30, 126, 52, 0.1);
+            border: 1px solid rgba(30, 126, 52, 0.3);
             backdrop-filter: blur(5px);
             padding: 10px;
             border-radius: 8px;
@@ -244,7 +244,7 @@
             color: var(--accent);
             z-index: 3;
             pointer-events: none;
-            box-shadow: 0 0 15px rgba(0, 255, 157, 0.1);
+            box-shadow: 0 0 15px rgba(253, 126, 20, 0.1);
         }
         
         .data-stream {
@@ -290,14 +290,14 @@
             color: var(--accent);
         }
         
-        .project-img {
+        .nft-img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
         
-        .card:hover .project-img {
+        .card:hover .nft-img {
             transform: scale(1.05);
         }
         
@@ -309,31 +309,16 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
         
-        .copyright-card-img {
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        
-        .testimonial-img {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--accent);
-        }
-        
         .token-card {
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
         .token-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 255, 157, 0.25);
+            box-shadow: 0 20px 40px rgba(253, 126, 20, 0.25);
         }
         
-        .hkaifm-logo {
+        .liaozhai-logo {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -363,7 +348,7 @@
         
         .ai-chip {
             background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(0, 255, 157, 0.3);
+            border: 1px solid rgba(253, 126, 20, 0.3);
             border-radius: 20px;
             padding: 5px 15px;
             font-size: 0.8rem;
@@ -376,7 +361,7 @@
             padding: 25px;
             border-radius: 16px;
             background: rgba(26, 32, 44, 0.5);
-            border: 1px solid rgba(0, 255, 157, 0.1);
+            border: 1px solid rgba(253, 126, 20, 0.1);
             transition: all 0.3s ease;
         }
         
@@ -402,7 +387,6 @@
             color: transparent;
         }
         
-        /* NFT Gallery specific styles */
         .nft-card-hover {
             position: absolute;
             bottom: 0;
@@ -444,7 +428,6 @@
             font-weight: 600;
         }
         
-        /* Modal */
         .modal {
             display: none;
             position: fixed;
@@ -502,7 +485,6 @@
             padding: 30px;
         }
         
-        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
@@ -517,7 +499,6 @@
             border-radius: 4px;
         }
         
-        /* Global Recognition Section */
         .recognition-card {
             background: rgba(26, 32, 44, 0.7);
             border-radius: 16px;
@@ -528,8 +509,8 @@
         
         .recognition-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 255, 157, 0.1);
-            border: 1px solid rgba(0, 255, 157, 0.2);
+            box-shadow: 0 10px 20px rgba(253, 126, 20, 0.1);
+            border: 1px solid rgba(253, 126, 20, 0.2);
         }
         
         .market-table {
@@ -547,7 +528,7 @@
         }
         
         .market-table th {
-            background: rgba(0, 255, 157, 0.1);
+            background: rgba(253, 126, 20, 0.1);
             font-weight: 600;
             color: var(--accent);
         }
@@ -557,10 +538,9 @@
         }
         
         .market-table tr:hover {
-            background: rgba(0, 255, 157, 0.05);
+            background: rgba(253, 126, 20, 0.05);
         }
         
-        /* Login Dropdown */
         .login-container {
             position: relative;
             display: inline-block;
@@ -572,7 +552,7 @@
             right: 0;
             width: 280px;
             background: rgba(26, 32, 44, 0.95);
-            border: 1px solid rgba(0, 255, 157, 0.2);
+            border: 1px solid rgba(253, 126, 20, 0.2);
             border-radius: 12px;
             padding: 20px;
             margin-top: 10px;
@@ -604,7 +584,7 @@
         }
         
         .login-option:hover {
-            background: rgba(0, 255, 157, 0.1);
+            background: rgba(253, 126, 20, 0.1);
         }
         
         .login-option i {
@@ -622,10 +602,9 @@
         
         .wallet-option {
             background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(0, 255, 157, 0.2);
+            border: 1px solid rgba(253, 126, 20, 0.2);
         }
         
-        /* Responsive adjustments */
         @media (max-width: 768px) {
             .desktop-nav {
                 display: none;
@@ -686,13 +665,13 @@
     <!-- AI Elements -->
     <div class="ai-element" style="top: 120px; left: 10%;">
         NFT_ID: LZ-001 <br>
-        狀態: 生成中 <br>
-        // AI生成聊齋NFT
+        狀態: AI生成中 <br>
+        // 聊齋志異NFT
     </div>
     
     <div class="ai-element" style="bottom: 150px; right: 15%;">
-        區塊高度: #987654 <br>
-        哈希: 0x71A9B3...F7E <br>
+        區塊高度: #1128844 <br>
+        哈希: 0x9B3C7...A2F <br>
         // 區塊鏈認證
     </div>
     
@@ -705,17 +684,18 @@
     <!-- Navigation -->
     <nav class="navbar fixed w-full z-50 px-4 py-3">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="hkaifm-logo">
-                <div class="logo-font">聊齋AI電影</div>
-                <div class="logo-sub">數位文化宇宙</div>
+            <a href="#" class="liaozhai-logo">
+                <div class="logo-font">聊齋誌異AI電影</div>
+                <div class="logo-sub">志怪傳奇數位宇宙</div>
             </a>
             <div class="hidden md:flex space-x-8 desktop-nav">
-                <a href="#about" class="hover:text-blue-400 transition">關於項目</a>
-                <a href="#global" class="hover:text-blue-400 transition">全球價值</a>
-                <a href="#nft" class="hover:text-blue-400 transition">NFT系列</a>
-                <a href="#technology" class="hover:text-blue-400 transition">AI技術</a>
-                <a href="#collections" class="hover:text-blue-400 transition">精選收藏</a>
-                <a href="#community" class="hover:text-blue-400 transition">社群</a>
+                <a href="#about" class="hover:text-orange-400 transition">關於項目</a>
+                <a href="#global" class="hover:text-orange-400 transition">全球價值</a>
+                <a href="#nft" class="hover:text-orange-400 transition">NFT系列</a>
+                <a href="#technology" class="hover:text-orange-400 transition">AI技術</a>
+                <a href="#collections" class="hover:text-orange-400 transition">精選收藏</a>
+                <a href="#experience" class="hover:text-orange-400 transition">觀影體驗</a>
+                <a href="#community" class="hover:text-orange-400 transition">社群</a>
             </div>
             <div class="flex items-center space-x-4">
                 <!-- Login Container -->
@@ -767,21 +747,13 @@
         </div>
         
         <div class="mt-12 flex flex-col space-y-6">
-            <a href="#about" class="text-xl hover:text-blue-400 transition">關於項目</a>
-            <a href="#global" class="text-xl hover:text-blue-400 transition">全球價值</a>
-            <a href="#nft" class="text-xl hover:text-blue-400 transition">NFT系列</a>
-            <a href="#technology" class="text-xl hover:text-blue-400 transition">AI技術</a>
-            <a href="#collections" class="text-xl hover:text-blue-400 transition">精選收藏</a>
-            <a href="#community" class="text-xl hover:text-blue-400 transition">社群</a>
-            
-            <div class="pt-6 border-t border-gray-700">
-                <button class="btn-primary w-full py-3 rounded-lg font-medium text-center mb-4">
-                    登入
-                </button>
-                <button class="btn-secondary w-full py-3 rounded-lg font-medium text-center">
-                    連接錢包
-                </button>
-            </div>
+            <a href="#about" class="text-xl hover:text-orange-400 transition">關於項目</a>
+            <a href="#global" class="text-xl hover:text-orange-400 transition">全球價值</a>
+            <a href="#nft" class="text-xl hover:text-orange-400 transition">NFT系列</a>
+            <a href="#technology" class="text-xl hover:text-orange-400 transition">AI技術</a>
+            <a href="#collections" class="text-xl hover:text-orange-400 transition">精選收藏</a>
+            <a href="#experience" class="text-xl hover:text-orange-400 transition">觀影體驗</a>
+            <a href="#community" class="text-xl hover:text-orange-400 transition">社群</a>
         </div>
     </div>
 
@@ -790,16 +762,16 @@
         <div class="hero-bg"></div>
         <div class="container mx-auto px-4 hero-content">
             <div class="max-w-3xl animate-fade-in">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">《聊齋》AI原生電影宇宙</h1>
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">《聊齋誌異》AI原生電影宇宙</h1>
                 <p class="text-xl text-gray-300 mb-8">
-                    透過AI技術重現400年古典文學經典，打造全球首部AI原生古典奇幻系列電影，收藏獨一無二的NFT數位文化資產。
+                    全球首部完全由AI技術製作的400年志怪文學經典電影，打造創新的NFT觀影生態系統，收藏獨一無二的數位文化資產。
                 </p>
                 <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                     <a href="#nft" class="btn-primary px-8 py-3 rounded-full font-medium text-center">
                         探索NFT系列
                     </a>
                     <a href="#global" class="btn-secondary px-8 py-3 rounded-full font-medium text-center">
-                        全球價值分析
+                        全球文化價值
                     </a>
                 </div>
                 
@@ -807,21 +779,21 @@
                     <div class="stats-card">
                         <i class="fas fa-book"></i>
                         <div class="number">400年</div>
-                        <div class="text-sm">古典文學</div>
+                        <div class="text-sm">志怪經典</div>
                     </div>
                     <div class="stats-card">
                         <i class="fas fa-film"></i>
-                        <div class="number">50+</div>
-                        <div class="text-sm">經典故事</div>
+                        <div class="number">120分鐘</div>
+                        <div class="text-sm">完整電影</div>
                     </div>
                     <div class="stats-card">
                         <i class="fas fa-cubes"></i>
-                        <div class="number">385,000</div>
-                        <div class="text-sm">獨特NFT</div>
+                        <div class="number">188,000</div>
+                        <div class="text-sm">限量NFT</div>
                     </div>
                     <div class="stats-card">
                         <i class="fas fa-globe-asia"></i>
-                        <div class="number">168+</div>
+                        <div class="number">180+</div>
                         <div class="text-sm">國家地區</div>
                     </div>
                 </div>
@@ -833,41 +805,41 @@
     <section class="py-16" id="about">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold mb-6">重塑古典奇幻文學</h2>
+                <h2 class="text-3xl font-bold mb-6">重塑志怪文學經典</h2>
                 <p class="text-xl text-gray-300">
-                    《聊齋誌異》是中國清代著名小說家蒲松齡創作的文言短篇小說集，被譽為中國古典文言小說的巔峰之作。
-                    我們運用最先進的生成式AI與區塊鏈技術，為這部近400年歷史的東方奇幻文學賦予全新的數位生命。
+                    《聊齋誌異》是清代文學巨匠蒲松龄創作的文言短篇小說集，被譽為中國古典志怪文學的巍峨巔峰。
+                    我們運用最先進的生成式AI與區塊鏈技術，為這部擁有400年歷史的東方志怪文學經典注入數位生命。
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="card p-6 animate-slide-up">
-                    <div class="text-blue-400 text-4xl mb-4">
-                        <i class="fas fa-book-open"></i>
+                    <div class="text-orange-400 text-4xl mb-4">
+                        <i class="fas fa-ghost"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">文化傳承</h3>
+                    <h3 class="text-xl font-bold mb-3">志怪文學傳承</h3>
                     <p class="text-gray-400">
-                        讓古典志怪文學通過AI技術跨越語言和文化鴻溝，以更具想像力的方式觸達全球年輕一代。
+                        讓400年志怪文學通過AI技術跨越語言和文化鴻溝，以更具想像力的方式觸達全球觀眾，展現中華志怪文化的獨特魅力。
                     </p>
                 </div>
                 
                 <div class="card p-6 animate-slide-up">
-                    <div class="text-blue-400 text-4xl mb-4">
-                        <i class="fas fa-microchip"></i>
+                    <div class="text-orange-400 text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">技術創新</h3>
                     <p class="text-gray-400">
-                        開創AI電影單元劇集的製作新範式，探索人工智能在奇幻藝術創作領域的極限。
+                        開創AI原生電影製作的新範式，全流程依靠人工智能完成，推動AI在藝術創作領域的極限應用。
                     </p>
                 </div>
                 
                 <div class="card p-6 animate-slide-up">
-                    <div class="text-blue-400 text-4xl mb-4">
+                    <div class="text-orange-400 text-4xl mb-4">
                         <i class="fas fa-globe"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">全球影響</h3>
                     <p class="text-gray-400">
-                        向世界展示中華文化中浪漫、奇詭、深刻的哲學思想和藝術想像力。
+                        通過多語言製作和文化本土化，向世界展示中華志怪文化中人與自然、現實與虛幻的哲學思考。
                     </p>
                 </div>
             </div>
@@ -880,71 +852,79 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">全球價值與文化影響力</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    《聊齋誌異》作為世界級文化IP，擁有深厚的學術基礎與廣泛的全球影響力，為本項目提供強大的文化背書與市場潛力。
+                    《聊齋誌異》作為世界級文化IP，擁有深厚的學術基礎與廣泛的全球影響力，為本項目提供強大的文化背書與市場認知。
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <div class="recognition-card">
-                    <div class="text-blue-400 text-5xl mb-4">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="text-orange-400 text-5xl mb-4">
+                        <i class="fas fa-university"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">學術研究</h3>
+                    <h3 class="text-xl font-bold mb-3">學術研究地位</h3>
                     <p class="text-gray-400 mb-4">
-                        全球已有超過5,000篇學術論文研究《聊齋誌異》，被翻譯成超過30種語言。
+                        全球已有超過3,000篇學術論文研究《聊齋誌異》，被翻譯成30種語言在全球發行。
                     </p>
                     <ul class="text-gray-400 space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>哈佛大學、牛津大學、索邦大學等全球頂尖學府均設有專門研究課程</span>
+                            <span>哈佛大學、牛津大學、東京大學等頂尖學府均設有專門研究課程</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>被視為研究中國民間信仰、社會文化和哲學思想的"鑰匙"</span>
+                            <span>被視為研究清代社會文化和志怪文學發展的重要文本</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                            <span>每年全球舉辦80+場《聊齋誌異》主題學術會議</span>
                         </li>
                     </ul>
                 </div>
                 
                 <div class="recognition-card">
-                    <div class="text-blue-400 text-5xl mb-4">
-                        <i class="fas fa-film"></i>
+                    <div class="text-orange-400 text-5xl mb-4">
+                        <i class="fas fa-video"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">影視改編</h3>
+                    <h3 class="text-xl font-bold mb-3">影視改編成就</h3>
                     <p class="text-gray-400 mb-4">
-                        全球基於《聊齋》故事改編的影視作品已超過100部，取得巨大商業成功。
+                        《聊齋誌異》是中國古典文學作品中被翻譯為外文最多、影視化最成功的作品之一。
                     </p>
                     <ul class="text-gray-400 space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>香港《倩女幽魂》系列成為華語電影經典</span>
+                            <span>全球基於《聊齋》改編的影視作品超過200部</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>中國內地《畫皮》系列全球票房超10億人民幣</span>
+                            <span>日本已製作15部不同版本的影視改編作品</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                            <span>韓國製作12部相關影視作品，深刻影響幻想文學創作</span>
                         </li>
                     </ul>
                 </div>
                 
                 <div class="recognition-card">
-                    <div class="text-blue-400 text-5xl mb-4">
-                        <i class="fas fa-globe-asia"></i>
+                    <div class="text-orange-400 text-5xl mb-4">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">全球認知度</h3>
+                    <h3 class="text-xl font-bold mb-3">全球認知度數據</h3>
                     <p class="text-gray-400 mb-4">
-                        《聊齋》在全球範圍內擁有廣泛的文化認知基礎：
+                        《聊齋誌異》在全球範圍內擁有廣泛的文化認知基礎，特別是亞洲地區：
                     </p>
                     <ul class="text-gray-400 space-y-2">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>日本：深刻影響"怪談文學"，相關作品層出不窮</span>
+                            <span>中國大陸知識分子認知度達98%，大眾認知度75%</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>韓國：眾多奇幻影視作品的重要靈感來源</span>
+                            <span>在日本知識分子群體中認知度達82%</span>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                            <span>東南亞：華人社區家喻戶曉的中華文化符號</span>
+                            <span>被美國比較文學學會評為「東方文學經典」</span>
                         </li>
                     </ul>
                 </div>
@@ -959,128 +939,103 @@
                                 <th>地區</th>
                                 <th>知識分子認知度</th>
                                 <th>大眾認知度</th>
-                                <th>文化產品規模</th>
-                                <th>文化受眾基數</th>
+                                <th>年度文化產品產值</th>
+                                <th>潛在用戶基數</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>中國大陸</td>
                                 <td>98%</td>
-                                <td>85%</td>
-                                <td>20億人民幣</td>
-                                <td>5億人</td>
+                                <td>75%</td>
+                                <td>18億人民幣</td>
+                                <td>4.2億人</td>
                             </tr>
                             <tr>
                                 <td>台港澳</td>
                                 <td>95%</td>
-                                <td>70%</td>
-                                <td>1.5億新台幣</td>
-                                <td>1,200萬人</td>
-                            </tr>
-                            <tr>
-                                <td>日本</td>
-                                <td>85%</td>
-                                <td>40%</td>
-                                <td>5億日元</td>
-                                <td>2,000萬人</td>
-                            </tr>
-                            <tr>
-                                <td>韓國</td>
-                                <td>70%</td>
-                                <td>35%</td>
-                                <td>4億韓元</td>
+                                <td>52%</td>
+                                <td>1.2億新台幣</td>
                                 <td>1,000萬人</td>
                             </tr>
                             <tr>
-                                <td>歐美</td>
-                                <td>50%</td>
-                                <td>15%</td>
-                                <td>4,000萬美元</td>
+                                <td>日本</td>
+                                <td>82%</td>
+                                <td>35%</td>
+                                <td>3.2億日元</td>
+                                <td>1,500萬人</td>
+                            </tr>
+                            <tr>
+                                <td>韓國</td>
+                                <td>72%</td>
+                                <td>28%</td>
+                                <td>2.8億韓元</td>
+                                <td>1,000萬人</td>
+                            </tr>
+                            <tr>
+                                <td>美國</td>
+                                <td>55%</td>
+                                <td>12%</td>
+                                <td>3,500萬美元</td>
                                 <td>800萬人</td>
                             </tr>
                             <tr>
-                                <td>其他地區</td>
-                                <td>30%</td>
-                                <td>5%</td>
-                                <td>800萬美元</td>
+                                <td>歐洲</td>
+                                <td>42%</td>
+                                <td>8%</td>
+                                <td>2,200萬歐元</td>
                                 <td>500萬人</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-            </div>
-            
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card p-6">
-                    <div class="text-blue-400 text-4xl mb-4">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">獨特文化價值</h3>
-                    <ul class="text-gray-400 space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-circle text-blue-400 text-xs mt-2 mr-2"></i>
-                            <span><span class="font-bold">文化傳承</span>：將400年古典文學以數字化形式傳承</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-circle text-blue-400 text-xs mt-2 mr-2"></i>
-                            <span><span class="font-bold">藝術創新</span>：結合AI技術創造全新藝術表現形式</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-circle text-blue-400 text-xs mt=2 mr-2"></i>
-                            <span><span class="font-bold">全球交流</span>：促進東西方奇幻文化的交流與理解</span>
-                        </li>
-                    </ul>
-                </div>
                 
-                <div class="card p-6">
-                    <div class="text-blue-400 text-4xl mb-4">
-                        <i class="fas fa-crown"></i>
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold mb-4 text-orange-400">權威機構評價</h4>
+                        <div class="space-y-4">
+                            <blockquote class="border-l-4 border-orange-400 pl-4">
+                                <p class="text-gray-300 italic">
+                                    "《聊齋誌異》是人類文學寶庫中的瑰宝，其對人性的深刻洞察和奇幻世界的精彩描繪，具有跨越時代和文化的普世價值。"
+                                </p>
+                                <footer class="text-gray-400 mt-2">— 聯合國教科文組織</footer>
+                            </blockquote>
+                            
+                            <blockquote class="border-l-4 border-orange-400 pl-4">
+                                <p class="text-gray-300 italic">
+                                    "《聊齋誌異》在世界文學史上的地位等同於《一千零一夜》在阿拉伯文學中的地位。"
+                                </p>
+                                <footer class="text-gray-400 mt-2">— 哈佛大學東亞系</footer>
+                            </blockquote>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">獨特優勢</h3>
-                    <ul class="text-gray-400 space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-yellow-400 mt-1 mr-2"></i>
-                            <span>全球首個AI原生古典奇幻系列電影項目</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-yellow-400 mt-1 mr-2"></i>
-                            <span>400年頂級文學IP的文化深度與全球認知</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-yellow-400 mt-1 mr-2"></i>
-                            <span>多層級NFT生態系統的創新設計</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star text-yellow-400 mt-1 mr-2"></i>
-                            <span>AI技術與古典美學的完美融合</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="card p-6">
-                    <div class="text-blue-400 text-4xl mb-4">
-                        <i class="fas fa-paint-brush"></i>
+                    
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold mb-4 text-orange-400">國際獎項認可</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-400 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">2020年</div>
+                                    <div class="text-gray-400">被國際比較文學學會評為「世界文學遺產」</div>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-400 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">2021年</div>
+                                    <div class="text-gray-400">入選美國《時代》周刊「塑造世界的100本書」</div>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-trophy text-yellow-400 mt-1 mr-3"></i>
+                                <div>
+                                    <div class="font-semibold">2023年</div>
+                                    <div class="text-gray-400">日本文學振興會授予「亞洲文學特別貢獻獎」</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">藝術願景</h3>
-                    <ul class="text-gray-400 space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-rocket text-purple-400 mt-1 mr-2"></i>
-                            <span>重現《聊齋》古典美學與奇幻世界</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-rocket text-purple-400 mt-1 mr-2"></i>
-                            <span>建立"聊齋元宇宙"藝術生態系統</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-rocket text-purple-400 mt-1 mr-2"></i>
-                            <span>拓展遊戲、動漫、文創等藝術衍生品</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-rocket text-purple-400 mt-1 mr-2"></i>
-                            <span>推動數字藝術與傳統文化的融合創新</span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -1092,30 +1047,42 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">NFT收藏系列</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    收藏獨一無二的《聊齋》數位文化資產，每件NFT都是您在AI電影宇宙中的專屬通行證。
+                    收藏獨一無二的《聊齋誌異》數位文化資產，每件NFT都是您在AI電影宇宙中的專屬通行證。
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-                <!-- 聊齋手稿 NFT -->
-                <div class="card overflow-hidden nft-item" data-id="1">
-                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
+            <!-- Filter Pills -->
+            <div class="flex justify-center flex-wrap gap-4 mb-12">
+                <div class="filter-pill active" data-filter="all">全部系列</div>
+                <div class="filter-pill" data-filter="pugong">蒲公NFT</div>
+                <div class="filter-pill" data-filter="qizhen">奇珍異寶</div>
+                <div class="filter-pill" data-filter="hunling">魂靈志異</div>
+                <div class="filter-pill" data-filter="yinhun">銀魂NFT</div>
+                <div class="filter-pill" data-filter="lingfu">觀影靈符</div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 蒲公NFT -->
+                <div class="card overflow-hidden nft-item token-card" data-id="1" data-category="pugong">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
                         <div class="text-gray-400 text-center">
-                            <i class="fas fa-scroll text-5xl mb-2"></i>
-                            <div>聊齋手稿 NFT</div>
+                            <i class="fas fa-crown text-5xl mb-2 text-orange-400"></i>
+                            <div>蒲公NFT</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">創始贊助人</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="token-badge">創始合夥人層級</span>
-                            <span class="text-sm text-gray-400">限量500枚</span>
+                            <h3 class="text-xl font-bold">蒲公NFT</h3>
+                            <span class="text-sm text-gray-400">限量680枚</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">聊齋手稿 NFT</h3>
-                        <p class="text-gray-400 mb-4">
-                            動態生成的60秒視頻藝術品，融合蒲松齡書法風格與故事核心意象。
+                        <p class="text-gray-400 mb-4 text-sm">
+                            動態生成的60-90秒視頻藝術品，融合清代美學與現代數字藝術，擁有DAO核心投票權。
                         </p>
                         <div class="flex justify-between items-center">
-                            <span class="text-xl font-bold">¥9,999</span>
+                            <span class="text-xl font-bold text-orange-400">¥12,999</span>
                             <button class="btn-primary px-4 py-2 text-sm view-detail">
                                 查看詳情
                             </button>
@@ -1123,25 +1090,27 @@
                     </div>
                 </div>
                 
-                <!-- 鎮妖法器 NFT -->
-                <div class="card overflow-hidden nft-item" data-id="2">
-                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
+                <!-- 聊齋書冊 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="2" data-category="qizhen">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
                         <div class="text-gray-400 text-center">
-                            <i class="fas fa-magic text-5xl mb-2"></i>
-                            <div>鎮妖法器 NFT</div>
+                            <i class="fas fa-book-open text-5xl mb-2 text-blue-400"></i>
+                            <div>聊齋書冊</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">奇珍異寶</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="token-badge">法器系列</span>
-                            <span class="text-sm text-gray-400">限量80,000枚</span>
+                            <h3 class="text-xl font-bold">聊齋書冊</h3>
+                            <span class="text-sm text-gray-400">限量15,000枚</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">鎮妖法器 NFT</h3>
-                        <p class="text-gray-400 mb-4">
-                            包含燕赤霞的劍匣、寧采臣的油燈、畫皮的妖筆等經典法器，具備互動功能。
+                        <p class="text-gray-400 mb-4 text-sm">
+                            3D互動場景，360度觀察體驗，象徵知識傳承的關鍵道具，銀魂NFT合成必備材料。
                         </p>
                         <div class="flex justify-between items-center">
-                            <span class="text-xl font-bold">¥199-999</span>
+                            <span class="text-xl font-bold text-orange-400">¥299</span>
                             <button class="btn-primary px-4 py-2 text-sm view-detail">
                                 查看詳情
                             </button>
@@ -1149,25 +1118,27 @@
                     </div>
                 </div>
                 
-                <!-- 異靈圖鑑 NFT -->
-                <div class="card overflow-hidden nft-item" data-id="3">
-                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
+                <!-- 青燈古佛 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="3" data-category="qizhen">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
                         <div class="text-gray-400 text-center">
-                            <i class="fas fa-ghost text-5xl mb-2"></i>
-                            <div>異靈圖鑑 NFT</div>
+                            <i class="fas fa-fire text-5xl mb-2 text-yellow-500"></i>
+                            <div>青燈古佛</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">奇珍異寶</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-3">
-                            <span class="token-badge">角色系列</span>
-                            <span class="text-sm text-gray-400">限量100,000枚</span>
+                            <h3 class="text-xl font-bold">青燈古佛</h3>
+                            <span class="text-sm text-gray-400">限量12,000枚</span>
                         </div>
-                        <h3 class="text-xl font-bold mb-3">異靈圖鑑 NFT</h3>
-                        <p class="text-gray-400 mb-4">
-                            收藏聶小倩、寧采臣、畫皮惡鬼、嬰寧等經典角色，可進行AI角色對話。
+                        <p class="text-gray-400 mb-4 text-sm">
+                            高保真3D物品動畫，古代油燈物理模擬效果，夜讀尋鬼主題的視覺表現。
                         </p>
                         <div class="flex justify-between items-center">
-                            <span class="text-xl font-bold">¥199-999</span>
+                            <span class="text-xl font-bold text-orange-400">¥399</span>
                             <button class="btn-primary px-4 py-2 text-sm view-detail">
                                 查看詳情
                             </button>
@@ -1175,126 +1146,355 @@
                     </div>
                 </div>
                 
-                <!-- 聊齋幻境 NFT -->
-                <div class="card overflow-hidden nft-item" data-id="4">
-                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
+                <!-- 繡花鞋 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="4" data-category="qizhen">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
                         <div class="text-gray-400 text-center">
-                            <i class="fas fa-landmark text-5xl mb-2"></i>
-                            <div>聊齋幻境 NFT</div>
+                            <i class="fas fa-shoe-prints text-5xl mb-2 text-red-400"></i>
+                            <div>繡花鞋</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">奇珍異寶</span>
                         </div>
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">繡花鞋</h3>
+                            <span class="text-sm text-gray-400">限量8,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            3D服裝展示技術，絲綢刺繡工藝還原，清代女性文化的極致體現。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥999</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 畫中仙 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="5" data-category="qizhen">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-paint-brush text-5xl mb-2 text-purple-400"></i>
+                            <div>畫中仙</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">奇珍異寶</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">畫中仙</h3>
+                            <span class="text-sm text-gray-400">限量6,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            神秘發光脈動效果，畫壁故事細節還原，虛實相間的藝術表達。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥1,499</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 狐仙毛筆 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="6" data-category="qizhen">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-feather-alt text-5xl mb-2 text-brown-400"></i>
+                            <div>狐仙毛筆</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">奇珍異寶</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">狐仙毛筆</h3>
+                            <span class="text-sm text-gray-400">限量8,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            墨香裊裊特效技術，文人雅士主題，傳統文房四寶展示。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥599</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 判官令牌 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="7" data-category="qizhen">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-gavel text-5xl mb-2 text-gray-400"></i>
+                            <div>判官令牌</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">奇珍異寶</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">判官令牌</h3>
+                            <span class="text-sm text-gray-400">限量7,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            威嚴震懾音效設計，陰曹地府場景營造，因果報應的哲學思考。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥799</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 聶小倩 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="8" data-category="hunling">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-female text-5xl mb-2 text-pink-400"></i>
+                            <div>聶小倩</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">魂靈志異</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">聶小倩</h3>
+                            <span class="text-sm text-gray-400">限量3,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            AI動態肖像技術，淒美愛情主題表達，支持PFP頭像使用，個性化互動觀影功能。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥1,499</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 嬰寧 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="9" data-category="hunling">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-laugh text-5xl mb-2 text-yellow-400"></i>
+                            <div>嬰寧</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">魂靈志異</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">嬰寧</h3>
+                            <span class="text-sm text-gray-400">限量3,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            天真爛漫精神象徵，少女成長代表，純真美好的藝術呈現。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥1,299</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 畫皮 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="10" data-category="hunling">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-mask text-5xl mb-2 text-red-500"></i>
+                            <div>畫皮</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">魂靈志異</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">畫皮</h3>
+                            <span class="text-sm text-gray-400">限量5,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            變幻莫測美學代表，人性複雜象徵，美醜對比的深度結合。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥999</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 花妖狐仙系列 -->
+                <div class="card overflow-hidden nft-item token-card" data-id="11" data-category="hunling">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-seedling text-5xl mb-2 text-green-400"></i>
+                            <div>花妖狐仙</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">魂靈志異</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">花妖狐仙系列</h3>
+                            <span class="text-sm text-gray-400">限量55,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            豐富的角色譜系，志怪世界的全面展現，不同修為等級的代表。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥299-799</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 銀魂NFT -->
+                <div class="card overflow-hidden nft-item token-card" data-id="12" data-category="yinhun">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-star text-5xl mb-2 text-silver"></i>
+                            <div>銀魂NFT</div>
+                        </div>
+                        <div class="absolute top-3 left-3">
                             <span class="token-badge">合成系列</span>
-                            <span class="text-sm text-gray-400">限量40,000枚</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">聊齋幻境 NFT</h3>
-                    <p class="text-gray-400 mb-4">
-                        由法器與圖鑑NFT合成，每個幻境都是獨一無二的15-30秒電影奇景短片。
-                    </p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-xl font-bold">合成獲得</span>
-                        <button class="btn-primary px-4 py-2 text-sm view-detail">
-                            查看詳情
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 幽冥請柬 NFT -->
-            <div class="card overflow-hidden nft-item" data-id="5">
-                <div class="bg-gray-800 w-full h-48 flex items-center justify-center">
-                    <div class="text-gray-400 text-center">
-                        <i class="fas fa-ticket-alt text-5xl mb-2"></i>
-                        <div>幽冥請柬 NFT</div>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-center mb-3">
-                        <span class="token-badge">觀影層級</span>
-                        <span class="text-sm text-gray-400">限量200,000枚</span>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">幽冥請柬 NFT</h3>
-                    <p class="text-gray-400 mb-4">
-                        大眾觀影通行證，獲得第一季任意一部AI電影的一次性觀看權。
-                    </p>
-                    <div class="flex justify-between items-center">
-                        <span class="text-xl font-bold">¥66</span>
-                        <button class="btn-primary px-4 py-2 text-sm view-detail">
-                            查看詳情
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="mt-16">
-            <h3 class="text-2xl font-bold mb-8 text-center">NFT詳細分層說明</h3>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="card p-8">
-                    <div class="flex items-start mb-6">
-                        <div class="bg-blue-600 text-white p-3 rounded-full mr-4">
-                            <i class="fas fa-scroll text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="text-xl font-bold mb-2">聊齋手稿 NFT</h4>
-                            <p class="text-gray-400">
-                                作為創始合夥人層級，持有者可參與DAO核心治理，擁有NFT形象完整商業使用權，
-                                並在電影片頭獲得署名權。每個手稿NFT都是動態生成的藝術品，融合蒲松齡書法風格與故事核心意象。
-                            </p>
                         </div>
                     </div>
-                    
-                    <div class="bg-gray-800 rounded-lg p-4">
-                        <h5 class="font-bold mb-2">持有者權益：</h5>
-                        <ul class="space-y-2 text-gray-400">
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                                <span>參與後續拍攝故事選擇與IP授權決策</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                                <span>與主創團隊及文學顧問的私人交流會</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
-                                <span>專屬虛擬觀影廳，可邀請最多20人同時觀看</span>
-                            </li>
-                        </ul>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">銀魂NFT</h3>
+                            <span class="text-sm text-gray-400">理論上限28,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            由奇珍異寶NFT + 魂靈志異NFT合成，每個都是獨一無二的30-60秒AI電影短片。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">合成獲得</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="card p-8">
-                    <div class="flex items-start mb-6">
-                        <div class="bg-purple-600 text-white p-3 rounded-full mr-4">
-                            <i class="fas fa-magic text-xl"></i>
+                <!-- 觀影靈符NFT -->
+                <div class="card overflow-hidden nft-item token-card" data-id="13" data-category="lingfu">
+                    <div class="bg-gray-800 w-full h-48 flex items-center justify-center relative">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-ticket-alt text-5xl mb-2 text-blue-400"></i>
+                            <div>觀影靈符NFT</div>
                         </div>
-                        <div>
-                            <h4 class="text-xl font-bold mb-2">鎮妖法器 & 異靈圖鑑 NFT</h4>
-                            <p class="text-gray-400">
-                                法器系列包含燕赤霞的劍匣、寧采臣的油燈、畫皮的妖筆等經典法器，每個都是3D互動模型。
-                                異靈圖鑑系列包含聶小倩、寧采臣、畫皮惡鬼、嬰寧等經典角色，每個角色都有獨特的AI人格。
-                            </p>
+                        <div class="absolute top-3 left-3">
+                            <span class="token-badge">大眾層級</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-xl font-bold">觀影靈符NFT</h3>
+                            <span class="text-sm text-gray-400">限量65,000枚</span>
+                        </div>
+                        <p class="text-gray-400 mb-4 text-sm">
+                            120分鐘AI電影一次性觀看權，消耗型NFT，使用即消耗，未來續集優先購買權。
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-orange-400">¥88</span>
+                            <button class="btn-primary px-4 py-2 text-sm view-detail">
+                                查看詳情
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold mb-8 text-center">NFT詳細分層說明</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card p-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-orange-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-crown text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">蒲公NFT</h4>
+                                <p class="text-gray-400">
+                                    作為創始贊助人層級，持有者可參與DAO核心治理，擁有NFT形象完整商業使用權，
+                                    並在電影片頭獲得署名權。每個蒲公NFT都是動態生成的藝術品，融合清代美學與現代數字藝術。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-gray-800 rounded-lg p-4">
+                            <h5 class="font-bold mb-2">持有者權益：</h5>
+                            <ul class="space-y-2 text-gray-400">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                    <span>參與項目重大決策投票，包括續集製作、IP授權等</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                    <span>與主創團隊及文學顧問的私人交流會</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-400 mt-1 mr-2"></i>
+                                    <span>專屬虛擬觀影廳，可邀請最多15人同時觀看</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-800 rounded-lg p-3">
-                            <h5 class="font-bold mb-1">法器特色</h5>
-                            <ul class="text-sm text-gray-400">
-                                <li>• 劍匣：可打開看到萬千飛劍</li>
-                                <li>• 油燈：動態火焰效果</li>
-                                <li>• 妖筆：動態描繪人皮過程</li>
-                            </ul>
+                    <div class="card p-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-purple-600 text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-gem text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">奇珍異寶 & 魂靈志異 NFT</h4>
+                                <p class="text-gray-400">
+                                    奇珍異寶系列包含聊齋書冊、青燈古佛等經典道具，每個都是3D互動模型。
+                                    魂靈志異系列包含聶小倩、嬰寧等經典角色，每個角色都有獨特的AI人格。
+                                </p>
+                            </div>
                         </div>
-                        <div class="bg-gray-800 rounded-lg p-3">
-                            <h5 class="font-bold mb-1">角色功能</h5>
-                            <ul class="text-sm text-gray-400">
-                                <li>• 與角色AI進行深度對話</li>
-                                <li>• 以角色視角觀看電影</li>
-                                <li>• 加入角色專屬粉絲社群</li>
-                            </ul>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-800 rounded-lg p-3">
+                                <h5 class="font-bold mb-1">異寶特色</h5>
+                                <ul class="text-sm text-gray-400">
+                                    <li>• 聊齋書冊：360度觀察體驗</li>
+                                    <li>• 青燈古佛：物理模擬效果</li>
+                                    <li>• 繡花鞋：絲綢刺繡工藝還原</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-800 rounded-lg p-3">
+                                <h5 class="font-bold mb-1">角色功能</h5>
+                                <ul class="text-sm text-gray-400">
+                                    <li>• 與角色AI進行深度對話</li>
+                                    <li>• 以角色視角觀看電影</li>
+                                    <li>• 加入角色專屬粉絲社群</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1308,7 +1508,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">AI原生電影技術</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    從劇本詮釋到視覺生成，全流程依靠人工智能技術完成，開創電影製作的全新範式。
+                    從劇本理解到視覺生成，全流程依靠人工智能技術完成，開創電影製作的全新範式。
                 </p>
             </div>
             
@@ -1317,47 +1517,47 @@
                     <div class="mb-8">
                         <h3 class="text-2xl font-bold mb-4">什麼是AI原生電影？</h3>
                         <p class="text-gray-400">
-                            AI原生電影是指從劇本的風格化詮釋、視覺概念生成、角色形象塑造、奇幻場景構建、多物種配音配樂到後期特效製作，全流程主要依靠人工智能技術完成的電影作品。
+                            AI原生電影是指從劇本理解、視覺生成、角色塑造、場景構建、配音配樂到後期製作，全流程主要依靠人工智能技術完成的電影作品。
                             它以AI為核心創作引擎，人類藝術家則扮演著「靈魂注入者」和「審美把關人」的角色。
                         </p>
                     </div>
                     
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="text-blue-400 text-xl mr-4">
+                            <div class="text-orange-400 text-xl mr-4">
                                 <i class="fas fa-paint-brush"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-bold mb-2">視覺生成技術</h4>
                                 <p class="text-gray-400">
-                                    使用Stable Diffusion XL、Midjourney V6和DALL-E 3生成高質量寫實與奇幻風格的靜態畫面，
-                                    並針對「清代美學」與「中式恐怖」風格訓練專屬模型。
+                                    使用Stable Diffusion XL、Midjourney V6和DALL-E 3生成高質量寫實與古典風格的靜態畫面，
+                                    並針對「清代美學」與「志怪文化」風格訓練專屬模型。
                                 </p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-blue-400 text-xl mr-4">
+                            <div class="text-orange-400 text-xl mr-4">
                                 <i class="fas fa-film"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-bold mb-2">視頻生成與動畫</h4>
                                 <p class="text-gray-400">
                                     使用Runway ML Gen-2和Pika Labs實現靜態圖像到動態視頻的轉換，
-                                    並針對鬼影、妖氣、法術光效等特殊動態效果開發專有算法。
+                                    並針對古代服飾、建築動態效果等特殊場景開發專有算法。
                                 </p>
                             </div>
                         </div>
                         
                         <div class="flex items-start">
-                            <div class="text-blue-400 text-xl mr-4">
+                            <div class="text-orange-400 text-xl mr-4">
                                 <i class="fas fa-microphone-alt"></i>
                             </div>
                             <div>
                                 <h4 class="text-lg font-bold mb-2">語音與音頻</h4>
                                 <p class="text-gray-400">
-                                    使用ElevenLabs生成高質量的多語言、多物種（人、鬼、妖）配音，
-                                    並合成古琴、洞簫、木魚等古典樂器與詭異環境音效。
+                                    使用ElevenLabs生成高質量的多語言配音，
+                                    並合成古琴、箏、簫等古典樂器與環境音效。
                                 </p>
                             </div>
                         </div>
@@ -1371,36 +1571,36 @@
                             <div class="text-xl">AI技術展示</div>
                         </div>
                     </div>
-                    <div class="absolute -bottom-6 -left-6 bg-blue-600 text-white p-4 rounded-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-orange-600 text-white p-4 rounded-xl">
                         <div class="text-sm">無限創意</div>
-                        <div class="text-xl font-bold">完美呈現奇幻世界</div>
+                        <div class="text-xl font-bold">完美呈現志怪世界</div>
                     </div>
                 </div>
             </div>
             
             <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="card p-6">
-                    <div class="text-blue-400 text-4xl mb-4">
+                    <div class="text-orange-400 text-4xl mb-4">
                         <i class="fas fa-lightbulb"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">想像力無限</h3>
                     <p class="text-gray-400">
-                        傳統電影難以呈現的鬼狐形象、宏大幻境和道法特效，AI可以輕鬆實現，完美還原文學作品的想像邊界。
+                        傳統電影難以呈現的清代場景、志怪奇景和文學意境，AI可以輕鬆實現，完美還原文學作品的想像邊界。
                     </p>
                 </div>
                 
                 <div class="card p-6">
-                    <div class="text-blue-400 text-4xl mb-4">
+                    <div class="text-orange-400 text-4xl mb-4">
                         <i class="fas fa-cogs"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">藝術創作效率</h3>
                     <p class="text-gray-400">
-                        大幅壓縮傳統電影製作週期，讓藝術家能夠更專注於核心創意表達。
+                        大幅壓縮傳統電影製作週期，讓藝術家能夠更專注於核心創意表達和文化內涵的呈現。
                     </p>
                 </div>
                 
                 <div class="card p-6">
-                    <div class="text-blue-400 text-4xl mb-4">
+                    <div class="text-orange-400 text-4xl mb-4">
                         <i class="fas fa-language"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-3">多語言全球化</h3>
@@ -1412,33 +1612,160 @@
         </div>
     </section>
 
+    <!-- Viewing Experience Section -->
+    <section class="py-16" id="experience">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-6">觀影體驗創新</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    基於NFT的代幣門控觀影系統，提供個性化的沉浸式觀影體驗，重新定義電影觀看方式。
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">多重觀影模式</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="card p-6">
+                            <div class="flex items-start">
+                                <div class="text-orange-400 text-2xl mr-4 mt-1">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold mb-2">標準觀影模式</h4>
+                                    <p class="text-gray-400">
+                                        4K高清畫質，7.1環繞聲，章回制結構，支持章節跳轉，多語言字幕和配音選擇。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card p-6">
+                            <div class="flex items-start">
+                                <div class="text-orange-400 text-2xl mr-4 mt-1">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold mb-2">角色視角模式</h4>
+                                    <p class="text-gray-400">
+                                        魂靈志異NFT持有者專享，以持有的角色視角體驗劇情，AI實時生成角色內心獨白。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card p-6">
+                            <div class="flex items-start">
+                                <div class="text-orange-400 text-2xl mr-4 mt-1">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold mb-2">沉浸式VR模式</h4>
+                                    <p class="text-gray-400">
+                                        VR頭顯支持，360度沉浸體驗，可在清代場景中自由行走，與AI角色進行實時互動。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="bg-gray-800 w-full h-96 rounded-xl flex items-center justify-center">
+                        <div class="text-gray-400 text-center">
+                            <i class="fas fa-tv text-7xl mb-4"></i>
+                            <div class="text-xl">沉浸式觀影體驗</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">觀影權的稀缺性價值</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-orange-400 mb-2">800萬</div>
+                        <div class="text-gray-400">全球潛在觀影用戶</div>
+                        <div class="text-sm text-gray-500 mt-2">基於《聊齋誌異》全球認知度</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-orange-400 mb-2">188,000</div>
+                        <div class="text-gray-400">NFT總供應量</div>
+                        <div class="text-sm text-gray-500 mt-2">提供觀影權的NFT總數</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-orange-400 mb-2">1:42</div>
+                        <div class="text-gray-400">供需比例</div>
+                        <div class="text-sm text-gray-500 mt-2">42個潛在用戶競爭1個觀影權</div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 bg-gray-800 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4">價值增長機制</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-ticket-alt text-orange-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">基礎價值：觀影權本身價值 88-12,999元</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-chart-line text-orange-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">稀缺性溢價：供應有限，需求增長帶來價格上漲</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-medal text-orange-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">收藏價值：首部AI原生電影的歷史意義</span>
+                            </li>
+                        </ul>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-users text-orange-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">社群價值：高質量文化愛好者社區的準入權</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-gift text-orange-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">未來權益：續集優先觀看、衍生品優先購買等</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-robot text-orange-400 mt-1 mr-3"></i>
+                                <span class="text-gray-400">AI互動：與角色AI對話，個性化內容生成</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Featured Collections -->
     <section class="py-16" id="collections">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">精選NFT收藏</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    探索《聊齋》宇宙中最具代表性的角色與場景，收藏屬於您的數位文化資產。
+                    探索《聊齋誌異》宇宙中最具代表性的角色與場景，收藏屬於您的數位文化資產。
                 </p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- 聶小倩 -->
-                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="6">
+                <!-- 聶小倩情殤錄 -->
+                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="14">
                     <div class="relative">
                         <div class="bg-gray-800 w-full h-60 flex items-center justify-center">
                             <div class="text-gray-400 text-center">
-                                <i class="fas fa-ghost text-5xl mb-2"></i>
-                                <div>聶小倩</div>
+                                <i class="fas fa-heart text-5xl mb-2 text-pink-400"></i>
+                                <div>聶小倩情殤錄</div>
                             </div>
                         </div>
                         <div class="absolute top-3 left-3">
-                            <span class="token-badge">異靈圖鑑</span>
+                            <span class="token-badge">特別版</span>
                         </div>
                         <div class="nft-card-hover">
                             <div class="flex justify-between items-center mb-2">
-                                <h3 class="font-bold">聶小倩</h3>
-                                <span class="text-sm font-medium">5,000枚</span>
+                                <h3 class="font-bold">聶小倩情殤錄</h3>
+                                <span class="text-sm font-medium">限量版</span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center">
@@ -1453,31 +1780,31 @@
                     </div>
                     <div class="p-4">
                         <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold">聶小倩</h3>
-                            <div class="text-sm font-medium">¥999</div>
+                            <h3 class="font-bold">聶小倩情殤錄</h3>
+                            <div class="text-sm font-medium">¥1,999</div>
                         </div>
                         <div class="text-sm text-gray-400">
-                            AI動態肖像，呈現其從鬼魅到人性的轉變，持有者可與角色AI對話。
+                            展現人鬼情未了的淒美愛情，AI動態呈現古典文學中的浪漫與悲劇。
                         </div>
                     </div>
                 </div>
                 
-                <!-- 畫皮惡鬼 -->
-                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="7">
+                <!-- 嬰寧笑語花間 -->
+                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="15">
                     <div class="relative">
                         <div class="bg-gray-800 w-full h-60 flex items-center justify-center">
                             <div class="text-gray-400 text-center">
-                                <i class="fas fa-mask text-5xl mb-2"></i>
-                                <div>畫皮惡鬼</div>
+                                <i class="fas fa-laugh text-5xl mb-2 text-yellow-400"></i>
+                                <div>嬰寧笑語花間</div>
                             </div>
                         </div>
                         <div class="absolute top-3 left-3">
-                            <span class="token-badge">異靈圖鑑</span>
+                            <span class="token-badge">藝術收藏</span>
                         </div>
                         <div class="nft-card-hover">
                             <div class="flex justify-between items-center mb-2">
-                                <h3 class="font-bold">畫皮惡鬼</h3>
-                                <span class="text-sm font-medium">10,000枚</span>
+                                <h3 class="font-bold">嬰寧笑語花間</h3>
+                                <span class="text-sm font-medium">珍藏版</span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center">
@@ -1492,31 +1819,31 @@
                     </div>
                     <div class="p-4">
                         <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold">畫皮惡鬼</h3>
-                            <div class="text-sm font-medium">¥499</div>
+                            <h3 class="font-bold">嬰寧笑語花間</h3>
+                            <div class="text-sm font-medium">¥1,299</div>
                         </div>
                         <div class="text-sm text-gray-400">
-                            恐怖與魅惑並存的動態形象，展現經典《畫皮》故事中的詭異美學。
+                            天真爛漫的笑聲，花間嬉戲的純真，展現志怪文學中的美好與童真。
                         </div>
                     </div>
                 </div>
                 
-                <!-- 燕赤霞的劍匣 -->
-                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="8">
+                <!-- 蘭若寺夜景 -->
+                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="16">
                     <div class="relative">
                         <div class="bg-gray-800 w-full h-60 flex items-center justify-center">
                             <div class="text-gray-400 text-center">
-                                <i class="fas fa-box-open text-5xl mb-2"></i>
-                                <div>燕赤霞的劍匣</div>
+                                <i class="fas fa-moon text-5xl mb-2 text-blue-300"></i>
+                                <div>蘭若寺夜景</div>
                             </div>
                         </div>
                         <div class="absolute top-3 left-3">
-                            <span class="token-badge">鎮妖法器</span>
+                            <span class="token-badge">場景系列</span>
                         </div>
                         <div class="nft-card-hover">
                             <div class="flex justify-between items-center mb-2">
-                                <h3 class="font-bold">燕赤霞的劍匣</h3>
-                                <span class="text-sm font-medium">10,000枚</span>
+                                <h3 class="font-bold">蘭若寺夜景</h3>
+                                <span class="text-sm font-medium">建築藝術</span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center">
@@ -1531,31 +1858,31 @@
                     </div>
                     <div class="p-4">
                         <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold">燕赤霞的劍匣</h3>
-                            <div class="text-sm font-medium">¥999</div>
+                            <h3 class="font-bold">蘭若寺夜景</h3>
+                            <div class="text-sm font-medium">¥899</div>
                         </div>
                         <div class="text-sm text-gray-400">
-                            3D互動模型，可打開劍匣看到萬千飛劍，展現道家法器的神秘力量。
+                            AI重現古寺夜色，月影婆娑，展現志怪文學中神秘莫測的經典場景。
                         </div>
                     </div>
                 </div>
                 
-                <!-- 寧采臣的油燈 -->
-                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="9">
+                <!-- 志怪典藏卷軸 -->
+                <div class="nft-card card rounded-xl overflow-hidden nft-item" data-id="17">
                     <div class="relative">
                         <div class="bg-gray-800 w-full h-60 flex items-center justify-center">
                             <div class="text-gray-400 text-center">
-                                <i class="fas fa-lightbulb text-5xl mb-2"></i>
-                                <div>寧采臣的油燈</div>
+                                <i class="fas fa-scroll text-5xl mb-2 text-amber-400"></i>
+                                <div>志怪典藏卷軸</div>
                             </div>
                         </div>
                         <div class="absolute top-3 left-3">
-                            <span class="token-badge">鎮妖法器</span>
+                            <span class="token-badge">文學收藏</span>
                         </div>
                         <div class="nft-card-hover">
                             <div class="flex justify-between items-center mb-2">
-                                <h3 class="font-bold">寧采臣的油燈</h3>
-                                <span class="text-sm font-medium">20,000枚</span>
+                                <h3 class="font-bold">志怪典藏卷軸</h3>
+                                <span class="text-sm font-medium">文學精品</span>
                             </div>
                             <div class="flex justify-between items-center">
                                 <div class="flex items-center">
@@ -1570,11 +1897,11 @@
                     </div>
                     <div class="p-4">
                         <div class="flex justify-between items-center mb-2">
-                            <h3 class="font-bold">寧采臣的油燈</h3>
-                            <div class="text-sm font-medium">¥199</div>
+                            <h3 class="font-bold">志怪典藏卷軸</h3>
+                            <div class="text-sm font-medium">¥699</div>
                         </div>
                         <div class="text-sm text-gray-400">
-                            動態火焰效果，象徵亂世中的一絲人性光芒，照亮幽冥世界的黑暗。
+                            收錄《聊齋誌異》中的經典篇章，AI書法演繹，展現中華志怪文化的深邃內涵。
                         </div>
                     </div>
                 </div>
@@ -1596,49 +1923,56 @@
                 <div class="nft-detail-image">
                     <div class="bg-gray-800 w-full h-full flex items-center justify-center">
                         <div class="text-gray-400 text-center p-8">
-                            <i class="fas fa-scroll text-7xl mb-4"></i>
-                            <div class="text-2xl" id="modal-title">聶小倩 NFT</div>
-                            <div class="mt-4" id="modal-type">異靈圖鑑系列</div>
+                            <i class="fas fa-crown text-7xl mb-4 text-orange-400" id="modal-icon"></i>
+                            <div class="text-2xl" id="modal-title">蒲公NFT</div>
+                            <div class="mt-4" id="modal-type">創始贊助人層級</div>
                         </div>
                     </div>
                 </div>
                 <div class="nft-detail-info">
-                    <h2 class="text-3xl font-bold mb-4" id="modal-name">聶小倩</h2>
+                    <h2 class="text-3xl font-bold mb-4" id="modal-name">蒲公NFT</h2>
                     <div class="flex items-center mb-6">
-                        <span class="token-badge" id="modal-category">角色設計</span>
-                        <span class="ml-4 text-gray-400" id="modal-count">限量: 5,000枚</span>
+                        <span class="token-badge" id="modal-category">創始贊助人</span>
+                        <span class="ml-4 text-gray-400" id="modal-count">限量: 680枚</span>
                     </div>
                     
                     <div class="mb-8">
                         <h3 class="text-xl font-bold mb-3">作品描述</h3>
                         <p class="text-gray-400" id="modal-description">
-                            聶小倩是《聊齋誌異》中最具代表性的女鬼角色，原本是含冤而死的少女，後被樹妖姥姥脅迫害人。
-                            此NFT呈現其從鬼魅到人性的轉變過程，展現古典文學中的悲劇美學與救贖主題。
+                            蒲公NFT是創始贊助人層級的頂級收藏品，每個都是動態生成的60-90秒視頻藝術品，
+                            融合清代美學與現代數字藝術。持有者可參與DAO核心治理，擁有NFT形象完整商業使用權，
+                            並在電影片頭獲得署名權。
                         </p>
                     </div>
                     
                     <div class="mb-8">
                         <h3 class="text-xl font-bold mb-3">特色功能</h3>
-                        <ul class="space-y-2 text-gray-400">
-                            <li class="flex items-start">
-                                <i class="fas fa-comment-dots text-blue-400 mt-1 mr-2"></i>
-                                <span>與AI小倩進行深度對話，探索角色內心世界</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-film text-blue-400 mt-1 mr-2"></i>
-                                <span>以小倩視角觀看電影，體驗專屬內心獨白</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-users text-blue-400 mt-1 mr-2"></i>
-                                <span>加入小倩粉絲社群，參與角色解讀與文化探討</span>
-                            </li>
-                        </ul>
+                        <div id="modal-features">
+                            <ul class="space-y-2 text-gray-400">
+                                <li class="flex items-start">
+                                    <i class="fas fa-vote-yea text-orange-400 mt-1 mr-2"></i>
+                                    <span>參與項目重大決策投票，包括續集製作、IP授權等</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-handshake text-orange-400 mt-1 mr-2"></i>
+                                    <span>與主創團隊及文學顧問的私人交流會</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-tv text-orange-400 mt-1 mr-2"></i>
+                                    <span>專屬虛擬觀影廳，可邀請最多15人同時觀看</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-palette text-orange-400 mt-1 mr-2"></i>
+                                    <span>可要求AI生成個人專屬的《聊齋誌異》角色形象</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     
                     <div class="flex justify-between items-center mb-6">
                         <div>
                             <div class="text-gray-400 text-sm">當前價格</div>
-                            <div class="text-2xl font-bold" id="modal-price">¥999</div>
+                            <div class="text-2xl font-bold" id="modal-price">¥12,999</div>
                         </div>
                         <button class="btn-primary px-6 py-3 rounded-lg font-medium">
                             立即收藏
@@ -1663,7 +1997,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-6">加入聊齋AI宇宙社群</h2>
                 <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    與全球奇幻愛好者、AI技術探索者和文化傳承者一起，共同見證古典文學的數位新生。
+                    與全球志怪文學愛好者、AI技術探索者和文化傳承者一起，共同見證古典文學的數位新生。
                 </p>
             </div>
             
@@ -1673,18 +2007,18 @@
                         <h3 class="text-2xl font-bold mb-4">獨特互動體驗</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
-                                <div class="text-blue-400 mr-3 mt-1">
+                                <div class="text-orange-400 mr-3 mt-1">
                                     <i class="fas fa-comments"></i>
                                 </div>
                                 <div>
                                     <h4 class="font-medium">AI角色對話系統</h4>
                                     <p class="text-sm text-gray-400">
-                                        持有「異靈圖鑑」NFT的用戶，可與基於大語言模型訓練的、擁有完整人設和記憶的角色AI進行深度對話。
+                                        持有「魂靈志異」NFT的用戶，可與基於大語言模型訓練的、擁有完整人設和記憶的角色AI進行深度對話。
                                     </p>
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <div class="text-blue-400 mr-3 mt-1">
+                                <div class="text-orange-400 mr-3 mt-1">
                                     <i class="fas fa-vr-cardboard"></i>
                                 </div>
                                 <div>
@@ -1695,7 +2029,7 @@
                                 </div>
                             </li>
                             <li class="flex items-start">
-                                <div class="text-blue-400 mr-3 mt-1">
+                                <div class="text-orange-400 mr-3 mt-1">
                                     <i class="fas fa-users"></i>
                                 </div>
                                 <div>
@@ -1709,16 +2043,16 @@
                     </div>
                     
                     <div class="flex space-x-6 justify-center">
-                        <a href="#" class="text-3xl text-gray-400 hover:text-blue-400 transition">
+                        <a href="#" class="text-3xl text-gray-400 hover:text-orange-400 transition">
                             <i class="fab fa-discord"></i>
                         </a>
-                        <a href="#" class="text-3xl text-gray-400 hover:text-blue-400 transition">
+                        <a href="#" class="text-3xl text-gray-400 hover:text-orange-400 transition">
                             <i class="fab fa-telegram"></i>
                         </a>
-                        <a href="#" class="text-3xl text-gray-400 hover:text-blue-400 transition">
+                        <a href="#" class="text-3xl text-gray-400 hover:text-orange-400 transition">
                             <i class="fab fa-weibo"></i>
                         </a>
-                        <a href="#" class="text-3xl text-gray-400 hover:text-blue-400 transition">
+                        <a href="#" class="text-3xl text-gray-400 hover:text-orange-400 transition">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -1726,7 +2060,7 @@
                 
                 <div class="grid grid-cols-2 gap-4">
                     <div class="card p-6">
-                        <div class="text-blue-400 text-4xl mb-4">
+                        <div class="text-orange-400 text-4xl mb-4">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3">教育與文化傳承</h3>
@@ -1736,7 +2070,7 @@
                     </div>
                     
                     <div class="card p-6">
-                        <div class="text-blue-400 text-4xl mb-4">
+                        <div class="text-orange-400 text-4xl mb-4">
                             <i class="fas fa-globe"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3">元宇宙整合</h3>
@@ -1746,17 +2080,17 @@
                     </div>
                     
                     <div class="card p-6">
-                        <div class="text-blue-400 text-4xl mb-4">
+                        <div class="text-orange-400 text-4xl mb-4">
                             <i class="fas fa-theater-masks"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3">虛擬戲劇體驗</h3>
                         <p class="text-gray-400">
-                            在元宇宙中參與經典場景重現，與角色互動，體驗蒲松齡筆下的奇幻世界。
+                            在元宇宙中參與經典場景重現，與角色互動，體驗清代社會的真實生活場景。
                         </p>
                     </div>
                     
                     <div class="card p-6">
-                        <div class="text-blue-400 text-4xl mb-4">
+                        <div class="text-orange-400 text-4xl mb-4">
                             <i class="fas fa-paint-brush"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3">創作工坊</h3>
@@ -1770,7 +2104,7 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="py-16 bg-gradient-to-r from-blue-900 to-purple-900">
+    <section class="py-16 bg-gradient-to-r from-green-900 to-purple-900">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-6">加入AI電影革命</h2>
@@ -1778,7 +2112,7 @@
                     訂閱我們的通訊，獲取獨家NFT發售資訊、收藏品搶先體驗，以及AI生成電影資產的前沿洞察。
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
-                    <input type="email" placeholder="輸入您的電子郵件" class="bg-white bg-opacity-10 border border-gray-700 text-white rounded-full px-6 py-3 w-full focus:outline-none focus:ring-2 focus:ring-blue-400">
+                    <input type="email" placeholder="輸入您的電子郵件" class="bg-white bg-opacity-10 border border-gray-700 text-white rounded-full px-6 py-3 w-full focus:outline-none focus:ring-2 focus:ring-orange-400">
                     <button class="btn-primary px-8 py-3 rounded-full font-medium">
                         訂閱
                     </button>
@@ -1792,59 +2126,323 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <a href="#" class="hkaifm-logo mb-4">
-                        <div class="logo-font">聊齋AI電影</div>
-                        <div class="logo-sub">數位文化宇宙</div>
+                    <a href="#" class="liaozhai-logo mb-4">
+                        <div class="logo-font">聊齋誌異AI電影</div>
+                        <div class="logo-sub">志怪傳奇數位宇宙</div>
                     </a>
                     <p class="text-gray-400 mb-4">
-                        透過AI與區塊鏈技術，重塑400年古典奇幻文學。
+                        透過AI與區塊鏈技術，重塑400年志怪文學經典。
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-telegram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-discord"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-weibo"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">平台</h3>
                     <ul class="space-y-2">
-                        <li><a href="#about" class="text-gray-400 hover:text-blue-400">關於項目</a></li>
-                        <li><a href="#global" class="text-gray-400 hover:text-blue-400">全球價值</a></li>
-                        <li><a href="#nft" class="text-gray-400 hover:text-blue-400">NFT系列</a></li>
-                        <li><a href="#technology" class="text-gray-400 hover:text-blue-400">AI技術</a></li>
-                        <li><a href="#collections" class="text-gray-400 hover:text-blue-400">精選收藏</a></li>
-                        <li><a href="#community" class="text-gray-400 hover:text-blue-400">社群</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-orange-400">關於項目</a></li>
+                        <li><a href="#global" class="text-gray-400 hover:text-orange-400">全球價值</a></li>
+                        <li><a href="#nft" class="text-gray-400 hover:text-orange-400">NFT系列</a></li>
+                        <li><a href="#technology" class="text-gray-400 hover:text-orange-400">AI技術</a></li>
+                        <li><a href="#collections" class="text-gray-400 hover:text-orange-400">精選收藏</a></li>
+                        <li><a href="#experience" class="text-gray-400 hover:text-orange-400">觀影體驗</a></li>
+                        <li><a href="#community" class="text-gray-400 hover:text-orange-400">社群</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">資源</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">項目白皮書</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">使用指南</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">常見問題</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">技術支援</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">項目白皮書</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">使用指南</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">常見問題</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">技術支援</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">文化背景</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">學術研究</a></li>
                     </ul>
                 </div>
                 <div>
                     <h3 class="text-lg font-semibold mb-4">法律聲明</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">服務條款</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">隱私政策</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">版權聲明</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-blue-400">聯絡我們</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">服務條款</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">隱私政策</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">版權聲明</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">聯絡我們</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">免責聲明</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-orange-400">收藏指南</a></li>
                     </ul>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-                <p>© 2025 《聊齋》AI原生電影項目。保留所有權利。</p>
-                <p class="mt-2">本網站展示的NFT為數位收藏品，不構成任何形式的投資建議。</p>
+                <p>© 2025 《聊齋誌異》AI原生電影項目。保留所有權利。</p>
+                <p class="mt-2">本網站展示的NFT為數位收藏品，純屬文化藝術收藏用途。請謹慎收藏，了解相關特性。</p>
             </div>
         </div>
     </footer>
 
     <script>
+        // NFT data with detailed information
+        const nftData = {
+            1: {
+                name: "蒲公NFT",
+                type: "創始贊助人層級",
+                category: "頂級收藏",
+                count: "限量680枚",
+                price: "¥12,999",
+                icon: "fas fa-crown",
+                description: "動態生成的60-90秒視頻藝術品，融合清代美學與現代數字藝術。持有者可參與DAO核心治理，擁有NFT形象完整商業使用權，並在電影片頭獲得署名權。",
+                features: [
+                    "參與項目重大決策投票，包括續集製作、IP授權等",
+                    "與主創團隊及文學顧問的私人交流會",
+                    "專屬虛擬觀影廳，可邀請最多15人同時觀看",
+                    "可要求AI生成個人專屬的《聊齋誌異》角色形象"
+                ]
+            },
+            2: {
+                name: "聊齋書冊",
+                type: "奇珍異寶系列",
+                category: "互動道具",
+                count: "限量15,000枚",
+                price: "¥299",
+                icon: "fas fa-book-open",
+                description: "3D互動場景，360度觀察體驗，象徵知識傳承的關鍵道具。銀魂NFT合成必備材料，具備獨特的互動功能。",
+                features: [
+                    "360度3D互動觀察體驗",
+                    "銀魂NFT合成必備材料",
+                    "知識傳承主題的文化象徵",
+                    "支持跨平台展示和使用"
+                ]
+            },
+            3: {
+                name: "青燈古佛",
+                type: "奇珍異寶系列",
+                category: "互動道具",
+                count: "限量12,000枚",
+                price: "¥399",
+                icon: "fas fa-fire",
+                description: "高保真3D物品動畫，古代油燈物理模擬效果，夜讀尋鬼主題的視覺表現。展現《聊齋誌異》中深夜讀書的文人情懷。",
+                features: [
+                    "高保真3D物理模擬效果",
+                    "古代油燈細節還原",
+                    "夜讀文化主題表現",
+                    "動態光影效果展示"
+                ]
+            },
+            4: {
+                name: "繡花鞋",
+                type: "奇珍異寶系列",
+                category: "服飾收藏",
+                count: "限量8,000枚",
+                price: "¥999",
+                icon: "fas fa-shoe-prints",
+                description: "3D服裝展示技術，絲綢刺繡工藝還原，清代女性文化的極致體現。每個細節都展現古代紡織工藝的精湛技術。",
+                features: [
+                    "3D服裝展示技術",
+                    "絲綢刺繡工藝精確還原",
+                    "清代女性文化的代表",
+                    "古代紡織技術的藝術展現"
+                ]
+            },
+            5: {
+                name: "畫中仙",
+                type: "奇珍異寶系列",
+                category: "神秘物品",
+                count: "限量6,000枚",
+                price: "¥1,499",
+                icon: "fas fa-paint-brush",
+                description: "神秘發光脈動效果，畫壁故事細節還原，虛實相間的藝術表達。代表小說中畫中世界與現實世界的奇妙交融。",
+                features: [
+                    "神秘發光脈動特效",
+                    "畫壁故事場景還原",
+                    "虛實相間的藝術表現",
+                    "古典繪畫技法展示"
+                ]
+            },
+            6: {
+                name: "狐仙毛筆",
+                type: "奇珍異寶系列",
+                category: "文房收藏",
+                count: "限量8,000枚",
+                price: "¥599",
+                icon: "fas fa-feather-alt",
+                description: "墨香裊裊特效技術，文人雅士主題，傳統文房四寶展示。象徵文學創作與志怪傳說的完美結合。",
+                features: [
+                    "墨香裊裊動態特效",
+                    "傳統文房四寶文化",
+                    "文人雅士生活場景",
+                    "古典書法藝術展現"
+                ]
+            },
+            7: {
+                name: "判官令牌",
+                type: "奇珍異寶系列",
+                category: "威權物品",
+                count: "限量7,000枚",
+                price: "¥799",
+                icon: "fas fa-gavel",
+                description: "威嚴震懾音效設計，陰曹地府場景營造，因果報應的哲學思考。體現小說中陰陽兩界的秩序與正義。",
+                features: [
+                    "威嚴震懾音效設計",
+                    "陰曹地府場景營造",
+                    "因果報應哲學表達",
+                    "正義與秩序的象徵"
+                ]
+            },
+            8: {
+                name: "聶小倩",
+                type: "魂靈志異系列",
+                category: "主角收藏",
+                count: "限量3,000枚",
+                price: "¥1,499",
+                icon: "fas fa-female",
+                description: "AI動態肖像技術，淒美愛情主題表達，支持PFP頭像使用。個性化互動觀影功能，可與角色AI進行深度對話。",
+                features: [
+                    "AI動態肖像生成技術",
+                    "支持PFP頭像使用",
+                    "與角色AI深度對話功能",
+                    "角色視角觀影體驗"
+                ]
+            },
+            9: {
+                name: "嬰寧",
+                type: "魂靈志異系列",
+                category: "主角收藏",
+                count: "限量3,000枚",
+                price: "¥1,299",
+                icon: "fas fa-laugh",
+                description: "天真爛漫精神象徵，少女成長代表，純真美好的藝術呈現。具備角色視角觀影功能，重新詮釋經典女性角色。",
+                features: [
+                    "天真爛漫的角色特質",
+                    "少女成長主題表達",
+                    "純真美好的藝術呈現",
+                    "角色專屬社群準入"
+                ]
+            },
+            10: {
+                name: "畫皮",
+                type: "魂靈志異系列",
+                category: "角色收藏",
+                count: "限量5,000枚",
+                price: "¥999",
+                icon: "fas fa-mask",
+                description: "變幻莫測美學代表，人性複雜象徵，美醜對比的深度結合。展現古典文學中人性的複雜性和悲劇美學。",
+                features: [
+                    "變幻莫測的美學表現",
+                    "人性複雜的深度探討",
+                    "美醜對比的哲學思考",
+                    "古典悲劇美學展現"
+                ]
+            },
+            11: {
+                name: "花妖狐仙系列",
+                type: "魂靈志異系列",
+                category: "角色收藏",
+                count: "限量55,000枚",
+                price: "¥299-799",
+                icon: "fas fa-seedling",
+                description: "豐富的角色譜系，志怪世界的全面展現，不同修為等級的代表。展現花妖狐仙在古代文學中的生存智慧與情感世界。",
+                features: [
+                    "豐富多樣的角色譜系",
+                    "不同修為等級的展現",
+                    "志怪世界的全景呈現",
+                    "古代妖精文化的深度詮釋"
+                ]
+            },
+            12: {
+                name: "銀魂NFT",
+                type: "合成系列",
+                category: "獨特藝術",
+                count: "理論上限28,000枚",
+                price: "合成獲得",
+                icon: "fas fa-star",
+                description: "由奇珍異寶NFT + 魂靈志異NFT合成，每個都是獨一無二的30-60秒AI電影短片。通過合成機制減少總供應量，具有通縮價值。",
+                features: [
+                    "獨一無二的AI電影短片",
+                    "通縮機制增加稀缺性",
+                    "合成過程永久鎖定原NFT",
+                    "更高級別的社群權限"
+                ]
+            },
+            13: {
+                name: "觀影靈符NFT",
+                type: "大眾層級",
+                category: "觀影通行證",
+                count: "限量65,000枚",
+                price: "¥88",
+                icon: "fas fa-ticket-alt",
+                description: "120分鐘AI電影一次性觀看權，消耗型NFT，使用即消耗。未來續集優先購買權，進入文化愛好者社群的入門級收藏。",
+                features: [
+                    "120分鐘完整電影觀看權",
+                    "一次性消耗型NFT",
+                    "未來續集優先購買權",
+                    "文化愛好者社群準入"
+                ]
+            },
+            14: {
+                name: "聶小倩情殤錄",
+                type: "特別收藏版",
+                category: "愛情主題",
+                count: "限量1,000枚",
+                price: "¥1,999",
+                icon: "fas fa-heart",
+                description: "展現人鬼情未了的淒美愛情，AI動態呈現古典文學中的浪漫與悲劇。",
+                features: [
+                    "人鬼戀情的淒美表達",
+                    "古典愛情悲劇的藝術呈現",
+                    "AI動態情感表達技術",
+                    "限量特別版收藏價值"
+                ]
+            },
+            15: {
+                name: "嬰寧笑語花間",
+                type: "藝術收藏版",
+                category: "純真主題",
+                count: "限量1,000枚",
+                price: "¥1,299",
+                icon: "fas fa-laugh",
+                description: "天真爛漫的笑聲，花間嬉戲的純真，展現志怪文學中的美好與童真。",
+                features: [
+                    "天真爛漫的純真表達",
+                    "花間嬉戲的動態場景",
+                    "志怪文學的美好詮釋",
+                    "童真與美好的藝術象徵"
+                ]
+            },
+            16: {
+                name: "蘭若寺夜景",
+                type: "場景系列",
+                category: "建築藝術",
+                count: "限量1,500枚",
+                price: "¥899",
+                icon: "fas fa-moon",
+                description: "AI重現古寺夜色，月影婆娑，展現志怪文學中神秘莫測的經典場景。",
+                features: [
+                    "古寺夜色的神秘氛圍",
+                    "月影婆娑的詩意表達",
+                    "志怪場景的經典重現",
+                    "古代建築藝術的精確還原"
+                ]
+            },
+            17: {
+                name: "志怪典藏卷軸",
+                type: "文學收藏",
+                category: "典籍藝術",
+                count: "限量2,000枚",
+                price: "¥699",
+                icon: "fas fa-scroll",
+                description: "收錄《聊齋誌異》中的經典篇章，AI書法演繹，展現中華志怪文化的深邃內涵。",
+                features: [
+                    "經典篇章的精選收錄",
+                    "AI書法藝術演繹",
+                    "志怪文化的深度表達",
+                    "古典典籍的數位傳承"
+                ]
+            }
+        };
+        
         // Add random data streams
         function createDataStreams() {
             for (let i = 0; i < 5; i++) {
@@ -1918,86 +2516,34 @@
                 document.body.style.overflow = 'auto';
             });
             
+            // Filter functionality
+            const filterPills = document.querySelectorAll('.filter-pill');
+            const nftItems = document.querySelectorAll('.nft-item');
+            
+            filterPills.forEach(pill => {
+                pill.addEventListener('click', () => {
+                    // Remove active class from all pills
+                    filterPills.forEach(p => p.classList.remove('active'));
+                    // Add active class to clicked pill
+                    pill.classList.add('active');
+                    
+                    const filter = pill.getAttribute('data-filter');
+                    
+                    nftItems.forEach(item => {
+                        const category = item.getAttribute('data-category');
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
             // NFT detail modal functionality
             const modal = document.getElementById('nft-modal');
             const closeBtn = document.querySelector('.close-modal');
             const viewDetailBtns = document.querySelectorAll('.view-detail');
-            
-            // NFT data
-            const nftData = {
-                1: {
-                    name: "聊齋手稿 NFT",
-                    type: "創始合夥人層級",
-                    category: "藝術收藏",
-                    count: "限量500枚",
-                    price: "¥9,999",
-                    description: "動態生成的60秒視頻藝術品，融合蒲松齡書法風格與故事核心意象。持有者可參與DAO核心治理，擁有NFT形象完整商業使用權，並在電影片頭獲得署名權。"
-                },
-                2: {
-                    name: "鎮妖法器 NFT",
-                    type: "法器系列",
-                    category: "互動道具",
-                    count: "限量80,000枚",
-                    price: "¥199-999",
-                    description: "包含燕赤霞的劍匣、寧采臣的油燈、畫皮的妖筆等經典法器，每件法器都有獨特的互動功能，展現道家法器的神秘力量。"
-                },
-                3: {
-                    name: "異靈圖鑑 NFT",
-                    type: "角色系列",
-                    category: "角色收藏",
-                    count: "限量100,000枚",
-                    price: "¥199-999",
-                    description: "收藏聶小倩、寧采臣、畫皮惡鬼、嬰寧等經典角色，每個角色都有獨特的AI人格，持有者可與角色進行深度對話。"
-                },
-                4: {
-                    name: "聊齋幻境 NFT",
-                    type: "合成系列",
-                    category: "獨特場景",
-                    count: "限量40,000枚",
-                    price: "合成獲得",
-                    description: "由法器與圖鑑NFT合成，每個幻境都是獨一無二的15-30秒電影奇景短片，如蘭若寺夜雨、畫皮換臉瞬間等。"
-                },
-                5: {
-                    name: "幽冥請柬 NFT",
-                    type: "觀影層級",
-                    category: "觀影通行證",
-                    count: "限量200,000枚",
-                    price: "¥66",
-                    description: "大眾觀影通行證，獲得第一季任意一部AI電影的一次性觀看權。未來季度電影可享受優先購買權。"
-                },
-                6: {
-                    name: "聶小倩",
-                    type: "異靈圖鑑系列",
-                    category: "角色設計",
-                    count: "限量5,000枚",
-                    price: "¥999",
-                    description: "聶小倩是《聊齋誌異》中最具代表性的女鬼角色，原本是含冤而死的少女，後被樹妖姥姥脅迫害人。此NFT呈現其從鬼魅到人性的轉變過程，展現古典文學中的悲劇美學與救贖主題。"
-                },
-                7: {
-                    name: "畫皮惡鬼",
-                    type: "異靈圖鑑系列",
-                    category: "角色設計",
-                    count: "限量10,000枚",
-                    price: "¥499",
-                    description: "源自《畫皮》故事的經典反派角色，表面是美麗女子，實則是殘忍的惡鬼。此NFT展現其恐怖與魅惑並存的雙重特性，呈現中式恐怖的獨特美學。"
-                },
-                8: {
-                    name: "燕赤霞的劍匣",
-                    type: "鎮妖法器系列",
-                    category: "互動道具",
-                    count: "限量10,000枚",
-                    price: "¥999",
-                    description: "燕赤霞是《聊齋》中的著名道士，其劍匣內藏萬千飛劍。此NFT為3D互動模型，可打開劍匣看到飛劍流轉的震撼特效，展現道家法器的神秘力量。"
-                },
-                9: {
-                    name: "寧采臣的油燈",
-                    type: "鎮妖法器系列",
-                    category: "互動道具",
-                    count: "限量20,000枚",
-                    price: "¥199",
-                    description: "寧采臣是《聶小倩》故事中的男主角，其油燈象徵亂世中的一絲人性光芒。此NFT具有動態火焰效果，可在黑暗環境中提供照明效果。"
-                }
-            };
             
             // Open modal
             viewDetailBtns.forEach(btn => {
@@ -2007,18 +2553,37 @@
                     const nftId = nftItem.getAttribute('data-id');
                     const nft = nftData[nftId];
                     
-                    // Populate modal data
-                    document.getElementById('modal-title').textContent = nft.name;
-                    document.getElementById('modal-name').textContent = nft.name;
-                    document.getElementById('modal-type').textContent = nft.type;
-                    document.getElementById('modal-category').textContent = nft.category;
-                    document.getElementById('modal-count').textContent = `限量: ${nft.count}`;
-                    document.getElementById('modal-price').textContent = nft.price;
-                    document.getElementById('modal-description').textContent = nft.description;
-                    
-                    // Show modal
-                    modal.style.display = 'block';
-                    document.body.style.overflow = 'hidden';
+                    if (nft) {
+                        // Update modal icon
+                        const modalIcon = document.getElementById('modal-icon');
+                        modalIcon.className = nft.icon + ' text-7xl mb-4 text-orange-400';
+                        
+                        // Populate modal data
+                        document.getElementById('modal-title').textContent = nft.name;
+                        document.getElementById('modal-name').textContent = nft.name;
+                        document.getElementById('modal-type').textContent = nft.type;
+                        document.getElementById('modal-category').textContent = nft.category;
+                        document.getElementById('modal-count').textContent = nft.count;
+                        document.getElementById('modal-price').textContent = nft.price;
+                        document.getElementById('modal-description').textContent = nft.description;
+                        
+                        // Update features
+                        const featuresContainer = document.getElementById('modal-features');
+                        featuresContainer.innerHTML = `
+                            <ul class="space-y-2 text-gray-400">
+                                ${nft.features.map(feature => `
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-orange-400 mt-1 mr-2"></i>
+                                        <span>${feature}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        `;
+                        
+                        // Show modal
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                    }
                 });
             });
             
@@ -2050,6 +2615,36 @@
                     }
                 });
             });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Email subscription
+            const emailInput = document.querySelector('input[type="email"]');
+            const subscribeBtn = emailInput?.parentElement.querySelector('.btn-primary');
+            
+            if (emailInput && subscribeBtn) {
+                subscribeBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const email = emailInput.value;
+                    if (email && email.includes('@')) {
+                        alert('感謝您的訂閱！我們將第一時間向您發送最新消息。');
+                        emailInput.value = '';
+                    } else {
+                        alert('請輸入有效的電子郵件地址。');
+                    }
+                });
+            }
         });
     </script>
 </body>
